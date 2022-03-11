@@ -13,3 +13,5 @@ git clone https://github.com/n4bb12/apollo-nextjs-example
 cd apollo-nextjs-example
 yarn dev
 ```
+
+You can view the GraphQL Playground at `/api/graphql`.
