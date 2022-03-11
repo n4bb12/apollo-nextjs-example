@@ -11,5 +11,6 @@ export function createApolloServer() {
     typeDefs: [bookTypeDefs, authorsTypeDefs, sharedTypeDefs],
     resolvers: [bookResolvers, authorResolvers],
     plugins: [ApolloServerPluginLandingPageGraphQLPlayground()],
+    introspection: true,
   })
 }
