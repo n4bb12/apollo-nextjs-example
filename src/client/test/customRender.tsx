@@ -15,8 +15,5 @@ export const customRender = (
   const TestProviders: FC = ({ children }) => (
     <MockedProvider mocks={mocks}>{children}</MockedProvider>
   )
-  return render(<MockedProvider mocks={mocks}>{children}</MockedProvider>, {
-    wrapper: TestProviders,
-    ...options,
-  })
+  return render(children, { wrapper: TestProviders, ...options })
 }
